@@ -1,0 +1,93 @@
+html,body{
+    margin: 0px;
+    background-color: black;
+    color: white;
+}
+header{
+    display: flex;
+    font-size: 1.5rem;
+    background-color: rgb(16, 80, 20);
+    color:black;
+    padding: 1rem 1em;
+    font-size:2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+footer {
+    padding: 1rem;
+    color: rgb(131, 131, 131)
+}
+ul{
+    list-style: none;
+}
+
+#slogan{
+    color:white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: bold;
+}
+
+#menu{
+    width: 20em;
+    font-size: 1rem;
+    justify-content: space-between;
+    flex-flow: row;
+    color:white;
+    display:flex;
+    list-style: none;
+}
+
+#profile{
+    display:flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+#profile__img{
+    width: 30vw;
+    height: 30vw;
+}
+
+.player{
+    display:flex;
+    flex-direction: row;
+    margin: 5rem 1em;
+}
+
+.title-name{
+    padding-left:1rem;
+    font-size:6rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+}
+.profile-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: flex-start;
+    width: 20vw;
+    font-size: 1.2rem;
+}
+.info{
+    margin: 1em;
+}
+@media screen and (max-width: 60rem) {
+    #profile {
+      flex-direction: column;
+    }
+
+    header{
+    flex-direction:column;
+    }
+    .player{
+        flex-direction: column;
+        align-items: center;
+    }
+    #profile__img{
+        width: 60vw;
+        height: 60vw;
+    }
+    .title-name{
+        font-size: 4rem;
+    }
+  }
